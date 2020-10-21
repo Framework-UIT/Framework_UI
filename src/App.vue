@@ -65,7 +65,7 @@ body {
 
 #app {
   color: white;
-  background-color: #19123e;
+  /* background-color: #19123e; */
   font-family: "Open Sans", sans-serif;
 }
 </style>

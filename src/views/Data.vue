@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div>
     <h1 class=" grey--text">Data</h1>
     <v-form @submit.prevent>
       <v-text-field
@@ -17,13 +17,23 @@
         :headers="headers"
         :items="items"
         class="elevation-1"
-      ></v-data-table>
+      >
+        <template v-slot:[`item.actions`]="{ item }">
+          <v-btn
+            depressed
+            :color="checkDownloadedItem(item)"
+            small
+            @click="addToDB(item)"
+            >Add to DB</v-btn
+          >
+        </template>
+      </v-data-table>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
-import { getCardData, getAllCardsFromDb } from "../api/apiServices";
+import { getCardData } from "../api/apiServices";
 export default {
   name: "Data",
   data() {
@@ -42,17 +52,43 @@ export default {
         },
         { text: "name", value: "name" },
         { text: "description", value: "description" },
+        { text: "Actions", value: "actions", sortable: false },
       ],
       items: [],
     };
   },
   created() {
-    getAllCardsFromDb().then((res) => {
-      // console.log(res);
-      this.items = res.data;
-    });
+    if (!localStorage.getItem("search_data")) {
+      localStorage.setItem("search_data", JSON.stringify([]));
+    } else {
+      let copy_data = JSON.parse(localStorage.getItem("search_data"));
+      copy_data.forEach((search) => {
+        if (localStorage.getItem(search)) {
+          let searchResults = JSON.parse(localStorage.getItem(search));
+          this.items = this.items.concat(searchResults);
+        }
+      });
+    }
+    // getAllCardsFromDb().then(
+    //   (res) => {
+    //     // console.log(res);
+    //     this.items = res.data;
+    //   },
+    //   (err) => console.log(err)
+    // );
   },
   methods: {
+    checkDownloadedItem(item) {
+      return item.isDownloaded ? "error" : "primary";
+    },
+    addSearchToLocalStorage() {
+      let copy_ls_data = JSON.parse(localStorage.getItem("search_data"));
+      copy_ls_data.push(this.searchVal);
+      localStorage.setItem("search_data", JSON.stringify(copy_ls_data));
+    },
+    addDataToLocalStorage(items) {
+      localStorage.setItem(this.searchVal, JSON.stringify(items));
+    },
     getWord() {
       getCardData(this.searchVal).then((res) => {
         let result = res.data;
@@ -64,10 +100,12 @@ export default {
               "hwi" in element && "prs" in element.hwi
                 ? element.hwi.prs[0].mw
                 : " ",
+            isDownloaded: false,
           };
-          console.log(formatted_word);
           this.items.push(formatted_word);
         });
+        this.addSearchToLocalStorage();
+        this.addDataToLocalStorage(this.items);
       });
     },
   },

@@ -1,20 +1,8 @@
 <template>
   <div>
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      permanent
-      class="deep-purple accent-4"
-      dark
-    >
+    <v-navigation-drawer v-model="drawer" app class="deep-purple accent-4" dark>
       <v-list>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          router
-          :to="item.route"
-          link
-        >
+        <v-list-item v-for="item in items" :key="item.title" :to="item.route">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -33,7 +21,10 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
+    <v-content class="content ml-5">
+      <router-view></router-view>
+    </v-content>
   </div>
 </template>
 

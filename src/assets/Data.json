@@ -1,0 +1,1222 @@
+{
+    "Sheet1": [
+        {
+            "Word": "bear",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bear",
+            "Meaning": "gấu"
+        },
+        {
+            "Word": "chimpanzee",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/chimpanzee",
+            "Meaning": "hắc tinh tinh"
+        },
+        {
+            "Word": "elephant",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/elephant",
+            "Meaning": "voi"
+        },
+        {
+            "Word": "fox",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/fox",
+            "Meaning": "cáo"
+        },
+        {
+            "Word": "giraffe",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/giraffe",
+            "Meaning": "hươu cao cổ"
+        },
+        {
+            "Word": "hippopotamus",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/hippopotamus",
+            "Meaning": "hà mã"
+        },
+        {
+            "Word": "lion",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/lion",
+            "Meaning": "sư tử"
+        },
+        {
+            "Word": "jaguar",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jaguar",
+            "Meaning": "báo đốm"
+        },
+        {
+            "Word": "porcupine",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/porcupine",
+            "Meaning": "nhím"
+        },
+        {
+            "Word": "raccoon",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/raccoon",
+            "Meaning": "gấu mèo"
+        },
+        {
+            "Word": "rhinoceros",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/rhinoceros",
+            "Meaning": "tê giác"
+        },
+        {
+            "Word": "squirrel",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/squirrel",
+            "Meaning": "sóc"
+        },
+        {
+            "Word": "alligator",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/alligator",
+            "Meaning": "cá sấu"
+        },
+        {
+            "Word": "bat",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bat",
+            "Meaning": "dơi"
+        },
+        {
+            "Word": "deer",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/deer",
+            "Meaning": "hươu"
+        },
+        {
+            "Word": "wolf",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/wolf",
+            "Meaning": "chó sói"
+        },
+        {
+            "Word": "beaver",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/beaver",
+            "Meaning": "hải ly"
+        },
+        {
+            "Word": "chipmunk",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/chipmunk",
+            "Meaning": "sóc chuột"
+        },
+        {
+            "Word": "dolphin",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/dolphin",
+            "Meaning": "cá heo"
+        },
+        {
+            "Word": "shark",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/shark",
+            "Meaning": "cá mập"
+        },
+        {
+            "Word": "whale",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/whale",
+            "Meaning": "cá voi"
+        },
+        {
+            "Word": "eel",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/eel",
+            "Meaning": "lươn"
+        },
+        {
+            "Word": "swordfish",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/swordfish",
+            "Meaning": "cá kiếm"
+        },
+        {
+            "Word": "walrus",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/walrus",
+            "Meaning": "hải mã"
+        },
+        {
+            "Word": "penguin",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/penguin",
+            "Meaning": "chim cánh cụt"
+        },
+        {
+            "Word": "turtle",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/turtle",
+            "Meaning": "rùa"
+        },
+        {
+            "Word": "antelope",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/antelope",
+            "Meaning": "nai sừng tấm"
+        },
+        {
+            "Word": "bee",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bee",
+            "Meaning": "ong"
+        },
+        {
+            "Word": "cobra",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cobra",
+            "Meaning": "rắn hổ mang"
+        },
+        {
+            "Word": "camel",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/camel",
+            "Meaning": "lạc đà"
+        },
+        {
+            "Word": "scorpion",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/scorpion",
+            "Meaning": "bọ cạp"
+        },
+        {
+            "Word": "zebra",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/zebra",
+            "Meaning": "ngựa vằn"
+        },
+        {
+            "Word": "donkey",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/donkey",
+            "Meaning": "lừa"
+        },
+        {
+            "Word": "monkey",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/monkey",
+            "Meaning": "khỉ"
+        },
+        {
+            "Word": "cat",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cat",
+            "Meaning": "mèo"
+        },
+        {
+            "Word": "dog",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/dog",
+            "Meaning": "chó "
+        },
+        {
+            "Word": "fish",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/fish",
+            "Meaning": "cá"
+        },
+        {
+            "Word": "chicken",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/chicken",
+            "Meaning": "gà"
+        },
+        {
+            "Word": "duck",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/duck",
+            "Meaning": "vịt"
+        },
+        {
+            "Word": "pig",
+            "Category": "animal",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pig",
+            "Meaning": "heo"
+        },
+        {
+            "Word": "hot",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/hot",
+            "Meaning": "nóng"
+        },
+        {
+            "Word": "cold",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cold",
+            "Meaning": "lạnh"
+        },
+        {
+            "Word": "hungry ",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/hungry ",
+            "Meaning": "đói"
+        },
+        {
+            "Word": "frustated",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/frustated",
+            "Meaning": "bực bội"
+        },
+        {
+            "Word": "furious",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/furious",
+            "Meaning": "điên tiết"
+        },
+        {
+            "Word": "angry ",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/angry ",
+            "Meaning": "giận dữ"
+        },
+        {
+            "Word": "disgusted",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/disgusted",
+            "Meaning": "ghê tởm"
+        },
+        {
+            "Word": "surprised",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/surprised",
+            "Meaning": "ngạc nhiên"
+        },
+        {
+            "Word": "sad",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sad",
+            "Meaning": "buồn bã"
+        },
+        {
+            "Word": "bored",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bored",
+            "Meaning": "chán"
+        },
+        {
+            "Word": "scared",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/scared",
+            "Meaning": "sợ hãi"
+        },
+        {
+            "Word": "sleepy",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sleepy",
+            "Meaning": "buồn ngủ"
+        },
+        {
+            "Word": "exhausted",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/exhausted",
+            "Meaning": "mệt mỏi"
+        },
+        {
+            "Word": "shy",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/shy",
+            "Meaning": "e thẹn"
+        },
+        {
+            "Word": "happy",
+            "Category": "feeling",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/happy",
+            "Meaning": "hạnh phúc"
+        },
+        {
+            "Word": "daisy ",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/daisy ",
+            "Meaning": "hoa cúc"
+        },
+        {
+            "Word": "rose",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/rose",
+            "Meaning": "hoa hồng"
+        },
+        {
+            "Word": "narcissus",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/narcissus",
+            "Meaning": "hoa thủy tiên"
+        },
+        {
+            "Word": "orchild",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/orchild",
+            "Meaning": "hoa phong lan"
+        },
+        {
+            "Word": "tulip",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/tulip",
+            "Meaning": "hoa tu lip"
+        },
+        {
+            "Word": "sunflower ",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sunflower ",
+            "Meaning": "hoa hướng dương"
+        },
+        {
+            "Word": "cyclamen",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cyclamen",
+            "Meaning": "hoa anh thảo"
+        },
+        {
+            "Word": "carnation",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/carnation",
+            "Meaning": "hoa cẩm chướng"
+        },
+        {
+            "Word": "poppy",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/poppy",
+            "Meaning": "hoa anh túc"
+        },
+        {
+            "Word": "pansy",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pansy",
+            "Meaning": "hoa păng sê"
+        },
+        {
+            "Word": "violet",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/violet",
+            "Meaning": "hoa vi o lét"
+        },
+        {
+            "Word": "mimosa",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/mimosa",
+            "Meaning": "hoa xấu hổ"
+        },
+        {
+            "Word": "lily",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/lily",
+            "Meaning": "hoa loa kèn"
+        },
+        {
+            "Word": "hyacinth",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/hyacinth",
+            "Meaning": "hoa lan dạ hương"
+        },
+        {
+            "Word": "gladiolus",
+            "Category": "flower",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/gladiolus",
+            "Meaning": "hoa lay ơn"
+        },
+        {
+            "Word": "sweet ",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sweet ",
+            "Meaning": "ngọt"
+        },
+        {
+            "Word": "salty",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/salty",
+            "Meaning": "mặn"
+        },
+        {
+            "Word": "bitter",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bitter",
+            "Meaning": "đắng"
+        },
+        {
+            "Word": "sour",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sour",
+            "Meaning": "chua"
+        },
+        {
+            "Word": "cheesy ",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cheesy ",
+            "Meaning": "béo vị phô mai"
+        },
+        {
+            "Word": "bland",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bland",
+            "Meaning": "nhạt"
+        },
+        {
+            "Word": "spicy",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/spicy",
+            "Meaning": "cay"
+        },
+        {
+            "Word": "garlicky",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/garlicky",
+            "Meaning": "vị tỏi"
+        },
+        {
+            "Word": "smoky",
+            "Category": "taste",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/smoky",
+            "Meaning": "vị xông khói"
+        },
+        {
+            "Word": "principal",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/principal",
+            "Meaning": "hiệu trưởng"
+        },
+        {
+            "Word": "teacher",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/teacher",
+            "Meaning": "giáo viên"
+        },
+        {
+            "Word": "janitor",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/janitor",
+            "Meaning": "lao công"
+        },
+        {
+            "Word": "student",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/student",
+            "Meaning": "học sinh"
+        },
+        {
+            "Word": "classroom",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/classroom",
+            "Meaning": "phòng học"
+        },
+        {
+            "Word": "hall",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/hall",
+            "Meaning": "hội trường"
+        },
+        {
+            "Word": "library",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/library",
+            "Meaning": "thư viện"
+        },
+        {
+            "Word": "canteen",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/canteen",
+            "Meaning": "căn tin"
+        },
+        {
+            "Word": "subjects",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/subjects",
+            "Meaning": "môn học"
+        },
+        {
+            "Word": "blackboard",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/blackboard",
+            "Meaning": "bảng đen"
+        },
+        {
+            "Word": "projector",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/projector",
+            "Meaning": "máy chiếu"
+        },
+        {
+            "Word": "computer",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/computer",
+            "Meaning": "máy vi tính"
+        },
+        {
+            "Word": "campus",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/campus",
+            "Meaning": "khuôn viên trường"
+        },
+        {
+            "Word": "dormitory",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/dormitory",
+            "Meaning": "ký túc xá"
+        },
+        {
+            "Word": "lecturer",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/lecturer",
+            "Meaning": "giảng viên"
+        },
+        {
+            "Word": "professor",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/professor",
+            "Meaning": "giáo sư"
+        },
+        {
+            "Word": "cafeteria ",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cafeteria ",
+            "Meaning": "quán ăn tự phục vụ"
+        },
+        {
+            "Word": "thesis ",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/thesis ",
+            "Meaning": "khóa luận"
+        },
+        {
+            "Word": "laboratory",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/laboratory",
+            "Meaning": "phòng thí nghiệm"
+        },
+        {
+            "Word": "infirmary ",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/infirmary ",
+            "Meaning": "phòng y tế"
+        },
+        {
+            "Word": "schoolyard",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/schoolyard",
+            "Meaning": "sân trường"
+        },
+        {
+            "Word": "staffroom",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/staffroom",
+            "Meaning": "phòng giáo viên"
+        },
+        {
+            "Word": "test",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/test",
+            "Meaning": "bài kiểm tra"
+        },
+        {
+            "Word": "textbook",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/textbook",
+            "Meaning": "sách giáo khoa"
+        },
+        {
+            "Word": "timetable",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/timetable",
+            "Meaning": "thời khóa biểu"
+        },
+        {
+            "Word": "uniform",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/uniform",
+            "Meaning": "đồng phục"
+        },
+        {
+            "Word": "yearbook",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/yearbook",
+            "Meaning": "kỷ yếu"
+        },
+        {
+            "Word": "homework",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/homework",
+            "Meaning": "bài tập về nhà"
+        },
+        {
+            "Word": "bell",
+            "Category": "school",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bell",
+            "Meaning": "chuông"
+        },
+        {
+            "Word": "car ",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/car ",
+            "Meaning": "xe hơi"
+        },
+        {
+            "Word": "truck",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/truck",
+            "Meaning": "xe tải"
+        },
+        {
+            "Word": "bus",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bus",
+            "Meaning": "xe buýt"
+        },
+        {
+            "Word": "bicycle",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bicycle",
+            "Meaning": "xe đạp"
+        },
+        {
+            "Word": "scooter",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/scooter",
+            "Meaning": "xe tay ga"
+        },
+        {
+            "Word": "motorbike",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/motorbike",
+            "Meaning": "xe máy"
+        },
+        {
+            "Word": "train",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/train",
+            "Meaning": "xe lửa"
+        },
+        {
+            "Word": "subway",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/subway",
+            "Meaning": "tàu điện ngầm"
+        },
+        {
+            "Word": "jet",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jet",
+            "Meaning": "máy bay phản lực"
+        },
+        {
+            "Word": "submarine",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/submarine",
+            "Meaning": "tàu cánh ngầm"
+        },
+        {
+            "Word": "rocket",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/rocket",
+            "Meaning": "tên lửa"
+        },
+        {
+            "Word": "helicopter",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/helicopter",
+            "Meaning": "máy bay trực thăng"
+        },
+        {
+            "Word": "sailboat",
+            "Category": "transport ",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sailboat",
+            "Meaning": "thuyền buồm"
+        },
+        {
+            "Word": "sun ",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sun ",
+            "Meaning": "mặt trời"
+        },
+        {
+            "Word": "mercury",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/mercury",
+            "Meaning": "sao thủy"
+        },
+        {
+            "Word": "venus",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/venus",
+            "Meaning": "sao kim"
+        },
+        {
+            "Word": "earth",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/earth",
+            "Meaning": "trái đất"
+        },
+        {
+            "Word": "mars",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/mars",
+            "Meaning": "sao hỏa"
+        },
+        {
+            "Word": "jupiter",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jupiter",
+            "Meaning": "sao mộc"
+        },
+        {
+            "Word": "saturn",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/saturn",
+            "Meaning": "sao thổ"
+        },
+        {
+            "Word": "uranus",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/uranus",
+            "Meaning": "sao thiên vương"
+        },
+        {
+            "Word": "neptune",
+            "Category": "planet",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/neptune",
+            "Meaning": "sao hải vương"
+        },
+        {
+            "Word": "stadium",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/stadium",
+            "Meaning": "sân vận động"
+        },
+        {
+            "Word": "pitch",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pitch",
+            "Meaning": "sân bóng đá"
+        },
+        {
+            "Word": "scoreboard",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/scoreboard",
+            "Meaning": "bảng điểm"
+        },
+        {
+            "Word": "goal",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/goal",
+            "Meaning": "khung thành"
+        },
+        {
+            "Word": "striker",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/striker",
+            "Meaning": "tiền đạo"
+        },
+        {
+            "Word": "defender",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/defender",
+            "Meaning": "hậu vệ"
+        },
+        {
+            "Word": "Goalkeeper",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/Goalkeeper",
+            "Meaning": "thủ môn"
+        },
+        {
+            "Word": "Referee",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/Referee",
+            "Meaning": "trọng tài"
+        },
+        {
+            "Word": "coach",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/coach",
+            "Meaning": "huấn luyện viên"
+        },
+        {
+            "Word": "whistle ",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/whistle ",
+            "Meaning": "còi"
+        },
+        {
+            "Word": "trophy",
+            "Category": "football",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/trophy",
+            "Meaning": "cúp"
+        },
+        {
+            "Word": "astronaut",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/astronaut",
+            "Meaning": "phi hành gia"
+        },
+        {
+            "Word": "cartoonist",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cartoonist",
+            "Meaning": "họa sĩ vẽ phim hoạt hình"
+        },
+        {
+            "Word": "architect",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/architect",
+            "Meaning": "kiến trúc sư"
+        },
+        {
+            "Word": "photographer ",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/photographer ",
+            "Meaning": "nhiếp ảnh gia"
+        },
+        {
+            "Word": "lawyer",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/lawyer",
+            "Meaning": "luật sư"
+        },
+        {
+            "Word": "psychologist",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/psychologist",
+            "Meaning": "nhà tâm lý học"
+        },
+        {
+            "Word": "model",
+            "Category": "job",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/model",
+            "Meaning": "người mẫu"
+        },
+        {
+            "Word": "cycling",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cycling",
+            "Meaning": "môn đạp xe"
+        },
+        {
+            "Word": "gymnastics",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/gymnastics",
+            "Meaning": "môn thể dục dụng cụ"
+        },
+        {
+            "Word": "tennis",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/tennis",
+            "Meaning": "môn quần vợt"
+        },
+        {
+            "Word": "running",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/running",
+            "Meaning": "môn chạy bộ"
+        },
+        {
+            "Word": "swimming ",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/swimming ",
+            "Meaning": "môn bơi lội"
+        },
+        {
+            "Word": "riding",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/riding",
+            "Meaning": "môn cưỡi ngựa"
+        },
+        {
+            "Word": "volleyball",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/volleyball",
+            "Meaning": "môn bóng chuyền"
+        },
+        {
+            "Word": "football",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/football",
+            "Meaning": "môn bóng đá"
+        },
+        {
+            "Word": "basketball",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/basketball",
+            "Meaning": "môn bóng rổ"
+        },
+        {
+            "Word": "baseball",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/baseball",
+            "Meaning": "môn bóng chày"
+        },
+        {
+            "Word": "golf",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/golf",
+            "Meaning": "môn đánh golf"
+        },
+        {
+            "Word": "slkateboarding",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/slkateboarding",
+            "Meaning": "môn trượt ván"
+        },
+        {
+            "Word": "badminton",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/badminton",
+            "Meaning": "môn cầu lông"
+        },
+        {
+            "Word": "skiing",
+            "Category": "sport",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/skiing",
+            "Meaning": "môn trượt tuyết"
+        },
+        {
+            "Word": "dress",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/dress",
+            "Meaning": "đầm"
+        },
+        {
+            "Word": "blouse",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/blouse",
+            "Meaning": "áo cánh"
+        },
+        {
+            "Word": "pants",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pants",
+            "Meaning": "quần tây"
+        },
+        {
+            "Word": "shorts",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/shorts",
+            "Meaning": "quần đùi"
+        },
+        {
+            "Word": "shirt",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/shirt",
+            "Meaning": "áo sơ mi"
+        },
+        {
+            "Word": "suit",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/suit",
+            "Meaning": "đồ vest"
+        },
+        {
+            "Word": "jacket",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jacket",
+            "Meaning": "áo khoác"
+        },
+        {
+            "Word": "skirt",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/skirt",
+            "Meaning": "váy"
+        },
+        {
+            "Word": "cardigan",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cardigan",
+            "Meaning": "áo khoác len"
+        },
+        {
+            "Word": "sweeter",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/sweeter",
+            "Meaning": "áo len dài tay"
+        },
+        {
+            "Word": "bathrobe",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bathrobe",
+            "Meaning": "áo choàng tắm"
+        },
+        {
+            "Word": "jeans",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jeans",
+            "Meaning": "quần jeans"
+        },
+        {
+            "Word": "nightdress",
+            "Category": "clothes",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/nightdress",
+            "Meaning": "đầm ngủ"
+        },
+        {
+            "Word": "clasp",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/clasp",
+            "Meaning": "cái gài"
+        },
+        {
+            "Word": "chain",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/chain",
+            "Meaning": "chuỗi vòng cổ"
+        },
+        {
+            "Word": "pendant",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pendant",
+            "Meaning": "mặt dây chuyền đá quý"
+        },
+        {
+            "Word": "medallion",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/medallion",
+            "Meaning": "mặt dây chuyền kim loại"
+        },
+        {
+            "Word": "bangle",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/bangle",
+            "Meaning": "vòng tay"
+        },
+        {
+            "Word": "earrings",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/earrings",
+            "Meaning": "bông tai"
+        },
+        {
+            "Word": "pin",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/pin",
+            "Meaning": "gim cài áo"
+        },
+        {
+            "Word": "cufflink",
+            "Category": "jewelry",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cufflink",
+            "Meaning": "khuy cài cổ tay áo"
+        },
+        {
+            "Word": "magic",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/magic",
+            "Meaning": "phim kỳ ảo"
+        },
+        {
+            "Word": "drama",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/drama",
+            "Meaning": "kịch"
+        },
+        {
+            "Word": "comedy",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/comedy",
+            "Meaning": "hài kịch"
+        },
+        {
+            "Word": "cartoon",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cartoon",
+            "Meaning": "hoạt hình"
+        },
+        {
+            "Word": "horror",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/horror",
+            "Meaning": "phim kinh dị"
+        },
+        {
+            "Word": "romantic",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/romantic",
+            "Meaning": "phim tình cảm"
+        },
+        {
+            "Word": "detective ",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/detective ",
+            "Meaning": "phim trinh thám"
+        },
+        {
+            "Word": "thriller",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/thriller",
+            "Meaning": "phim ly kỳ"
+        },
+        {
+            "Word": "action",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/action",
+            "Meaning": "phim hành động"
+        },
+        {
+            "Word": "adventure",
+            "Category": "movie",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/adventure",
+            "Meaning": "phim phiêu lưu"
+        },
+        {
+            "Word": "cobalt",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/cobalt",
+            "Meaning": "màu xanh cô ban"
+        },
+        {
+            "Word": "beige",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/beige",
+            "Meaning": "màu be"
+        },
+        {
+            "Word": "crimson",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/crimson",
+            "Meaning": "màu đỏ thẫm"
+        },
+        {
+            "Word": "indigo",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/indigo",
+            "Meaning": "màu chàm"
+        },
+        {
+            "Word": "jade",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/jade",
+            "Meaning": "màu xanh ngọc bích"
+        },
+        {
+            "Word": "mauve",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/mauve",
+            "Meaning": "màu tím hoa cà"
+        },
+        {
+            "Word": "charcoal",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/charcoal",
+            "Meaning": "màu xám đậm"
+        },
+        {
+            "Word": "maroon",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/maroon",
+            "Meaning": "màu nâu đỏ"
+        },
+        {
+            "Word": "purple",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/purple",
+            "Meaning": "màu tía"
+        },
+        {
+            "Word": "silver",
+            "Category": "color",
+            "Link API": "https://www.dictionaryapi.com/api/v3/references/sd4/json/silver",
+            "Meaning": "màu xám bạc"
+        }
+    ]
+}
