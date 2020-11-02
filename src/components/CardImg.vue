@@ -3,8 +3,8 @@
     <template v-slot:default="{ hover }">
       <v-card class="mx-auto" max-width="344">
         <v-img
-          :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-          :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+          :src="imgUrl"
+          :lazy-src="`https://picsum.photos/10/6`"
           aspect-ratio="1"
           class="grey lighten-2 white--text "
         >
@@ -32,28 +32,11 @@
 
 <script>
 export default {
-  name: "LandingCard",
+  name: "CardImage",
   props: {
-    title: String,
-    body: String,
-    img: String,
-    rtl: Boolean,
+    imgUrl: String,
   },
 };
 </script>
 
-<style scoped>
-.card_title {
-  font-size: 31pt;
-  color: #fbc02d;
-  font-family: "Open Sans", sans-serif;
-}
-
-.v-image {
-  border-radius: 10px;
-}
-
-.v-sheet.v-card {
-  border-radius: 10px;
-}
-</style>
+<style></style>

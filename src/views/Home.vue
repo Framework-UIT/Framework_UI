@@ -1,83 +1,97 @@
 <template>
-  <div>
-    <v-parallax
-      dark
-      height="300"
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    >
-      <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
-          <h1 class="display-1 font-weight-thin mb-4">
-            Vuetify
-          </h1>
-          <h4 class="subheading">
-            Build your application today!
-          </h4>
-        </v-col>
-      </v-row>
-    </v-parallax>
-    <v-row>
-      <v-col class="mx-auto">
-        <h1>Popular cards</h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <AweSwiper :item-list="items"></AweSwiper>
-      <!-- <v-layout wrap justify-start>
-        <v-card class="mx-auto mb-5 mt-5" max-width="250">
-            <v-img
-              class="white--text align-end"
-              src="https://picsum.photos/300"
+  <v-container fluid>
+    <v-container>
+      <section>
+        Science flashcards, diagrams and study guides Explore popular Science
+        study sets on Quizlet. Study Science topics like Biology, Medicine and
+        Earth Science. Learn what you need to get good grades in Science
+        classes. Memorize important Science terms, definitions, formulas and
+        concepts. Prepare for Science homework and exams with free online
+        flashcards, diagrams, study guides and practice tests.
+      </section>
+      <section>
+        <v-row no-gutters justify="center">
+          <v-col md="4">
+            <v-list dense flat>
+              <v-list-item-group v-for="(n, index) in list" :key="index">
+                <v-list-item>
+                  {{ n }}
+                </v-list-item>
+              </v-list-item-group>
+            </v-list>
+          </v-col>
+          <v-col md="8">
+            <vueper-slides
+              class="no-shadow"
+              :visible-slides="3"
+              arrows
+              :slide-ratio="1 / 3"
+              :gap="3"
+              :dragging-distance="70"
             >
-              <v-card-title>{{ item.name }}</v-card-title>
-            </v-img>
+              <template v-slot:arrow-left>
+                <v-icon large>mdi-less-than </v-icon>
+              </template>
 
-            <v-card-subtitle class="pb-0">
-              {{ item.imgurl }}
-            </v-card-subtitle>
-
-            <v-card-text class="text--primary">
-              <div>{{ item.description }}</div>
-            </v-card-text>
-
-            <v-card-actions>
-              <v-btn color="orange" text>
-                Share
-              </v-btn>
-
-              <v-btn color="orange" text>
-                Explore
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-      </v-layout> -->
-    </v-row>
-  </div>
+              <template v-slot:arrow-right>
+                <v-icon large>mdi-greater-than</v-icon>
+              </template>
+              <vueper-slide
+                v-for="i in 6"
+                :key="i"
+                :title="i.toString()"
+                :style="'background-color: ' + ['#ff5252', '#42b983'][i % 2]"
+              />
+            </vueper-slides>
+          </v-col>
+        </v-row>
+      </section>
+    </v-container>
+  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
+// import { getAllCardsFromDb } from "@/api/apiServices";
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
 
-import { getAllCardsFromDb } from "@/api/apiServices";
-import AweSwiper from "../components/Swiper";
 export default {
   name: "Home",
-  components: {
-    AweSwiper,
-    // HelloWorld,
-  },
+  components: { VueperSlides, VueperSlide },
   data() {
     return {
-      items: [],
+      pauseOnHover: true,
+      autoPlaying: true,
+      internalAutoPlaying: true,
+      list: [
+        "Biology",
+        "Chemistry",
+        "Computer Science",
+        "Earth Science",
+        "Engineering",
+        "Medicine",
+        "Physics",
+        "Space Science",
+      ],
+      slides: [
+        {
+          title: "Slide #1",
+          content: "Slide content.",
+        },
+        {
+          title: "Slide #2",
+          content: "Slide content.",
+        },
+        {
+          id: "slide-1",
+          title: 'Slide <b style="font-size: 1.3em;color: yellow">#1</b>',
+          content:
+            'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>',
+        },
+      ],
     };
-  },
-  created() {
-    getAllCardsFromDb().then((res) => {
-      // console.log(res);
-      this.items = res.data;
-    });
   },
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

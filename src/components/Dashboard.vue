@@ -22,7 +22,7 @@
       </template>
     </v-navigation-drawer>
     <!-- <router-view></router-view> -->
-    <v-content class="content ml-5">
+    <v-content class="pa-8">
       <router-view></router-view>
     </v-content>
   </div>
@@ -37,6 +37,12 @@ export default {
       items: [
         { title: "Data", icon: "mdi-view-dashboard", route: "/admin/data" },
         { title: "About", icon: "mdi-account-box", route: "/admin/about" },
+        { title: "Import", icon: "mdi-download", route: "/admin/import" },
+        {
+          title: "Category",
+          icon: "mdi-check-box-multiple-outline",
+          route: "/admin/category",
+        },
       ],
     };
   },

@@ -11,6 +11,26 @@ const routes = [
     component: () => import("../views/Landing.vue"),
   },
   {
+    path: "/create",
+    name: "Create",
+    component: () => import("../views/Create.vue"),
+  },
+  {
+    path: "/user",
+    name: "User",
+    component: () => import("../views/User.vue"),
+  },
+  {
+    path: "/home",
+    name: "Home",
+    component: () => import("../views/Home.vue"),
+  },
+  {
+    path: "/topics",
+    name: "Topics",
+    component: () => import("../views/Topics.vue"),
+  },
+  {
     path: "/admin",
     name: "admin",
     component: () => import("../components/Dashboard.vue"),
@@ -28,6 +48,16 @@ const routes = [
         path: "data",
         name: "Data",
         component: () => import("../views/Data.vue"),
+      },
+      {
+        path: "import",
+        name: "Import",
+        component: () => import("../components/Import.vue"),
+      },
+      {
+        path: "category",
+        name: "Category",
+        component: () => import("../components/Category.vue"),
       },
     ],
   },

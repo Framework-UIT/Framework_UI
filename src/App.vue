@@ -10,14 +10,10 @@
           transition="scale-transition"
           width="40"
         />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <v-toolbar-title class="mr-2"> eFlashcard </v-toolbar-title>
+        <router-link to="/create" class="white--text"
+          ><v-btn text> Create</v-btn></router-link
+        >
       </div>
 
       <v-spacer></v-spacer>
@@ -25,14 +21,28 @@
       <v-btn class="dashboard" text>
         <router-link class="white--text" to="/admin"> Dashboard</router-link>
       </v-btn>
-      <router-link to="/">
+      <router-link to="/home">
         <v-btn target="_blank" text>
-          <span class="mr-2">Latest Release</span>
-          <v-icon>mdi-open-in-new</v-icon>
+          <span class="mr-2">Home</span>
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+      </router-link>
+      <router-link to="/topics">
+        <v-btn text>
+          <span class="mr-2">Topics</span>
+          <v-icon>mdi-checkbox-multiple-blank-outline</v-icon>
+        </v-btn>
+      </router-link>
+      <router-link to="/user">
+        <v-btn text>
+          <span class="mr-2">Huân Cao</span>
+          <v-icon>mdi-account</v-icon>
         </v-btn>
       </router-link>
     </v-app-bar>
-    <router-view></router-view>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </v-app>
 </template>
 
@@ -64,7 +74,6 @@ body {
 }
 
 #app {
-  color: white;
   /* background-color: #19123e; */
   font-family: "Open Sans", sans-serif;
 }

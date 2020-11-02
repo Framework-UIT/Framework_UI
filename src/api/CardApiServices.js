@@ -14,3 +14,7 @@ export const getCardById = (id) => {
   let url = "/cards/" + id;
   return DbApi.get(url);
 };
+
+export const createCard = (card) => {
+  return DbApi.post("/cards", card);
+};
