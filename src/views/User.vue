@@ -12,6 +12,13 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div class="pa-2">
+          <v-btn block @click="Logout">
+            Logout
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
     <v-main class="pa-8">
       <v-container class="mr-2">
@@ -33,8 +40,8 @@
           <v-row class="mx-0 blue lighten-2" justify="start" dense>
             <v-col md="1"> </v-col>
             <v-col>
-              <Card
-                quantity="26"
+              <Set
+                v-bind:quantity="26"
                 title="Your set"
                 body="Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -42,13 +49,13 @@
           scrambled it to make a type specimen book. It has survived not only
           five centurie"
                 class="mb-8"
-              ></Card>
-              <Card
-                quantity="26"
+              ></Set>
+              <Set
+                v-bind:quantity="26"
                 title="Your set"
                 body="your body"
                 class="mb-8"
-              ></Card>
+              ></Set>
             </v-col>
           </v-row>
         </section>
@@ -69,12 +76,15 @@
 </template>
 
 <script>
-import Card from "../components/Set";
+import Set from "../components/Set";
 import CardImage from "../components/CardImg";
+import { createNamespacedHelpers } from "vuex";
+const { mapActions } = createNamespacedHelpers("Account");
+import router from "../router";
 export default {
   name: "User",
   components: {
-    Card,
+    Set,
     CardImage,
   },
   data() {
@@ -89,6 +99,13 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    ...mapActions(["logout"]),
+    Logout() {
+      this.logout();
+      router.push("/login");
+    },
   },
 };
 </script>

@@ -31,6 +31,11 @@ const routes = [
     component: () => import("../views/Topics.vue"),
   },
   {
+    path: "/login",
+    name: "Login",
+    component: () => import("../views/Account/Login.vue"),
+  },
+  {
     path: "/admin",
     name: "admin",
     component: () => import("../components/Dashboard.vue"),
@@ -67,6 +72,17 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const publicPages = ["/", "/home", "/login"];
+  const authRequired = !publicPages.includes(to.path);
+  const loggedIn = localStorage.getItem("user");
+  if (authRequired && !loggedIn) {
+    alert("Please login first");
+    return next("home");
+  }
+  return next();
 });
 
 export default router;

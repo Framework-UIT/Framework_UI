@@ -5,7 +5,7 @@ export const instanceAPI = axios.create({
   baseURL: "https://www.dictionaryapi.com/api/v3/references/sd4/json/",
   timeout: 500,
   headers: {
-    // "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json; charset=utf-8",
   },
 });

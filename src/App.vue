@@ -1,6 +1,6 @@
 <template>
   <v-app class="ma-0 pa-0">
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app hide-on-scroll color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -41,7 +41,7 @@
       </router-link>
     </v-app-bar>
     <v-main>
-      <router-view></router-view>
+      <router-view id="main"></router-view>
     </v-main>
   </v-app>
 </template>

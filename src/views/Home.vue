@@ -1,52 +1,51 @@
 <template>
-  <v-container fluid>
-    <v-container>
-      <section>
-        Science flashcards, diagrams and study guides Explore popular Science
-        study sets on Quizlet. Study Science topics like Biology, Medicine and
-        Earth Science. Learn what you need to get good grades in Science
-        classes. Memorize important Science terms, definitions, formulas and
-        concepts. Prepare for Science homework and exams with free online
-        flashcards, diagrams, study guides and practice tests.
-      </section>
-      <section>
-        <v-row no-gutters justify="center">
-          <v-col md="4">
-            <v-list dense flat>
-              <v-list-item-group v-for="(n, index) in list" :key="index">
-                <v-list-item>
-                  {{ n }}
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </v-col>
-          <v-col md="8">
-            <vueper-slides
-              class="no-shadow"
-              :visible-slides="3"
-              arrows
-              :slide-ratio="1 / 3"
-              :gap="3"
-              :dragging-distance="70"
-            >
-              <template v-slot:arrow-left>
-                <v-icon large>mdi-less-than </v-icon>
-              </template>
+  <v-container fluid class="ml-8">
+    <h1>Science flashcards, diagrams and study guide</h1>
+    <div class="mt-4">
+      Science flashcards, diagrams and study guides Explore popular Science
+      study sets on Quizlet. Study Science topics like Biology, Medicine and
+      Earth Science. Learn what you need to get good grades in Science classes.
+      Memorize important Science terms, definitions, formulas and concepts.
+      Prepare for Science homework and exams with free online flashcards,
+      diagrams, study guides and practice tests.
+    </div>
+    <section>
+      <v-row no-gutters justify="start">
+        <v-col md="2">
+          <v-list dense flat>
+            <v-list-item-group v-for="(n, index) in list" :key="index">
+              <v-list-item>
+                {{ n }}
+              </v-list-item>
+            </v-list-item-group>
+          </v-list>
+        </v-col>
+        <v-col align-self="start" md="8">
+          <vueper-slides
+            class="no-shadow"
+            :visible-slides="3"
+            arrows
+            :slide-ratio="1 / 3"
+            :gap="3"
+            :dragging-distance="70"
+          >
+            <template v-slot:arrow-left>
+              <v-icon large>mdi-less-than </v-icon>
+            </template>
 
-              <template v-slot:arrow-right>
-                <v-icon large>mdi-greater-than</v-icon>
-              </template>
-              <vueper-slide
-                v-for="i in 6"
-                :key="i"
-                :title="i.toString()"
-                :style="'background-color: ' + ['#ff5252', '#42b983'][i % 2]"
-              />
-            </vueper-slides>
-          </v-col>
-        </v-row>
-      </section>
-    </v-container>
+            <template v-slot:arrow-right>
+              <v-icon large>mdi-greater-than</v-icon>
+            </template>
+            <vueper-slide
+              v-for="i in 6"
+              :key="i"
+              :title="i.toString()"
+              :style="'background-color: ' + ['#ff5252', '#42b983'][i % 2]"
+            />
+          </vueper-slides>
+        </v-col>
+      </v-row>
+    </section>
   </v-container>
 </template>
 
@@ -94,4 +93,10 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap");
+div,
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+</style>
