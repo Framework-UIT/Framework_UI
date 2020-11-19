@@ -14,3 +14,8 @@ export const getCategoryById = (id) => {
 export const createCategory = (Category) => {
   return DbApi.post("/category", Category);
 };
+
+export const getAllCategoriesWithCards = () => {
+  let url = "/category";
+  return DbApi.get(url);
+};

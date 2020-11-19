@@ -13,36 +13,18 @@
       <v-row no-gutters justify="start">
         <v-col md="2">
           <v-list dense flat>
-            <v-list-item-group v-for="(n, index) in list" :key="index">
+            <v-list-item-group v-for="(n, index) in cat_details" :key="index">
               <v-list-item>
-                {{ n }}
+                {{ n.name }}
               </v-list-item>
             </v-list-item-group>
           </v-list>
         </v-col>
         <v-col align-self="start" md="8">
-          <vueper-slides
-            class="no-shadow"
-            :visible-slides="3"
-            arrows
-            :slide-ratio="1 / 3"
-            :gap="3"
-            :dragging-distance="70"
-          >
-            <template v-slot:arrow-left>
-              <v-icon large>mdi-less-than </v-icon>
-            </template>
-
-            <template v-slot:arrow-right>
-              <v-icon large>mdi-greater-than</v-icon>
-            </template>
-            <vueper-slide
-              v-for="i in 6"
-              :key="i"
-              :title="i.toString()"
-              :style="'background-color: ' + ['#ff5252', '#42b983'][i % 2]"
-            />
-          </vueper-slides>
+          <div v-for="cat in cat_details.slice(0, 10)" :key="cat.categoryId">
+            <h1>{{ cat.name }}</h1>
+            <CardSwiper :slides="cat.card"></CardSwiper>
+          </div>
         </v-col>
       </v-row>
     </section>
@@ -51,45 +33,40 @@
 
 <script>
 // @ is an alias to /src
-// import { getAllCardsFromDb } from "@/api/apiServices";
-import { VueperSlides, VueperSlide } from "vueperslides";
+import { getAllCategoriesWithCards } from "@/api/CategoryApiServices";
+// import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
-
+// import CardImg from "../components/CardImg";
+import CardSwiper from "../components/CardSwiper";
 export default {
   name: "Home",
-  components: { VueperSlides, VueperSlide },
+  components: {
+    CardSwiper,
+  },
   data() {
     return {
       pauseOnHover: true,
       autoPlaying: true,
       internalAutoPlaying: true,
-      list: [
-        "Biology",
-        "Chemistry",
-        "Computer Science",
-        "Earth Science",
-        "Engineering",
-        "Medicine",
-        "Physics",
-        "Space Science",
-      ],
-      slides: [
-        {
-          title: "Slide #1",
-          content: "Slide content.",
-        },
-        {
-          title: "Slide #2",
-          content: "Slide content.",
-        },
-        {
-          id: "slide-1",
-          title: 'Slide <b style="font-size: 1.3em;color: yellow">#1</b>',
-          content:
-            'Slide title can be HTML.<br>And so does the slide content, <span style="font-size: 1.2em;color: yellow">why not?</span>',
-        },
-      ],
+      cat_details: [],
     };
+  },
+  mounted() {
+    getAllCategoriesWithCards().then((res) => {
+      let name = res.data;
+      this.cat_details = name;
+    });
+    console.log(this.getCatCards(1));
+  },
+  methods: {
+    getCatCards(cat_id) {
+      return this.cat_details.find((cat) => cat.categoryId == cat_id);
+    },
+  },
+  computed: {
+    categories: function() {
+      return this.cat_details.map((cat) => cat.name);
+    },
   },
 };
 </script>

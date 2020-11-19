@@ -80,7 +80,7 @@ router.beforeEach((to, from, next) => {
   const loggedIn = localStorage.getItem("user");
   if (authRequired && !loggedIn) {
     alert("Please login first");
-    return next("home");
+    return next("/login");
   }
   return next();
 });

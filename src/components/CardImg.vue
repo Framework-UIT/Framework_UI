@@ -15,13 +15,11 @@
               absolute
               color="#036358"
             >
-              <h2>Card's name</h2>
-              <span class=" ma-0 pa-0 white--text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </span>
+              <h2>{{ title }}</h2>
+              <div>
+                <span class="text-caption">26 cards</span>
+                &middot; <span class="text-caption">{{ user }}</span>
+              </div>
             </v-overlay>
           </v-fade-transition>
         </v-img>
@@ -34,6 +32,9 @@
 export default {
   name: "CardImage",
   props: {
+    title: String,
+    user: String,
+    qty: Number,
     imgUrl: String,
   },
 };

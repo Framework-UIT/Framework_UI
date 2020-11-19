@@ -49,7 +49,8 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { createNamespacedHelpers } from "vuex";
+const { mapActions, mapGetters } = createNamespacedHelpers("db");
 
 export default {
   name: "CardInput",
