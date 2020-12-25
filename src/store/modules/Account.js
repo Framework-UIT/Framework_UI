@@ -16,6 +16,7 @@ const actions = {
     commit("loginRequest", { username });
     userService.login(username, password).then(
       (user) => {
+        console.log(user);
         if (user && user.token) {
           commit("loginSuccess", user);
           router.push("/User");

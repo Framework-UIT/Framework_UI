@@ -119,15 +119,21 @@ export default {
       localStorage.setItem(this.searchVal, JSON.stringify(items));
     },
     addToDatabase(item) {
-      // console.log(item);
-      createCard(item).then((res) => console.log(res));
-      this.setItemDownloaded(item);
-    },
-    setItemDownloaded(item) {
-      this.items.forEach((it) => {
-        if (it.uuid == item.uuid) it.isDownloaded = true;
+      console.log(item);
+      let word = {
+        name: item.name,
+        description: item.description,
+        userId: 15,
+      };
+      createCard(word).then((res) => {
+        console.log(res);
+        this.setItemDownloaded(item.uuid);
       });
-      // console.log(found_item);
+    },
+    setItemDownloaded(id) {
+      let index = this.items.findIndex((item) => item.uuid == id);
+      if (index != -1) this.items[index].isDownloaded = true;
+      console.log(this.items[index]);
     },
     addAllSelectedToDb() {
       this.selected.forEach((item) => {

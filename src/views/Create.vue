@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <v-app-bar app fixed color="white">
+    <!-- <v-app-bar app fixed color="white">
       <v-toolbar-title class="m-16">Create a new study set</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn class="white--text" color="blue lighten-2">
         Create
       </v-btn>
-    </v-app-bar>
+    </v-app-bar> -->
 
     <section>
       <v-row justify="center" align-content="center">

@@ -2,28 +2,36 @@
   <v-container>
     <section>
       <v-row>
-        <v-col class="grey lighten-3 text-center" align-self="start" md="4">
-          <h1>Set's content here</h1>
+        <v-col align-self="start" md="4">
+          <h1>{{ set.name }}</h1>
         </v-col>
       </v-row>
+    </section>
+    <section class="mt-4">
       <v-row>
-        <v-row justify="center" class="blue lighten-3">
-          <span class="subtitle pt-6 grey--text" md="4"
-            >Set's description here Set's description here Set's description
-            here Set's description here Set's description here
-          </span>
-        </v-row>
+        <v-col cols="3">
+          <v-list>
+            <v-list-item>
+              Test
+            </v-list-item>
+          </v-list>
+        </v-col>
+        <v-col>
+          <CardSwiper v-if="dataLoaded" :slides="card_array"> </CardSwiper>
+        </v-col>
       </v-row>
     </section>
     <section class="pt-16">
-      <!-- <v-row>
-        <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
-          <CardImage
-            :imgUrl="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-          >
-          </CardImage>
+      <v-row>
+        <v-col
+          v-for="cardSet in set.cardSet"
+          :key="cardSet.cardSetId"
+          class="d-flex child-flex"
+          cols="4"
+        >
+          <CardImage :card="cardSet.card" no_username> </CardImage>
         </v-col>
-      </v-row> -->
+      </v-row>
     </section>
   </v-container>
 </template>
@@ -32,16 +40,25 @@
 // @ is an alias to /src
 // import { getAllCardsFromDb } from "@/api/apiServices";
 // import { VueperSlides, VueperSlide } from "vueperslides";
-// import CardImage from "../components/CardImg";
+import CardImage from "../components/CardImg";
 import "vueperslides/dist/vueperslides.css";
-
+import { getSetById } from "@/api/SetServices.js";
+import CardSwiper from "../components/CardSwiper";
 export default {
-  name: "Topics",
+  name: "TopicDetails",
   components: {
-    // CardImage,
+    CardImage,
+    CardSwiper,
+  },
+  async created() {
+    let res = await getSetById(this.$route.params.id);
+    this.set = res.data;
+    this.dataLoaded = true;
   },
   data() {
     return {
+      set: {},
+      dataLoaded: false,
       alignments: ["start", "center", "end"],
       hover: false,
       overlay: false,
@@ -65,6 +82,16 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    card_array: function() {
+      console.log(this.set);
+      let cs = this.set.cardSet;
+      let mapped = cs.map(function(cs) {
+        return cs.card;
+      });
+      return mapped;
+    },
   },
 };
 </script>

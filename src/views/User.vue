@@ -39,32 +39,35 @@
           </v-row>
           <v-row class="mx-0 blue lighten-2" justify="start" dense>
             <v-col md="1"> </v-col>
+            <v-row>
+              <v-col
+                v-for="set in sets"
+                :key="set.id"
+                class="d-flex child-flex"
+                cols="4"
+              >
+                <Set :set="set"> </Set>
+              </v-col>
+            </v-row>
             <v-col>
-              <Set
-                v-bind:quantity="26"
-                title="Your set"
-                body="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centurie"
-                class="mb-8"
-              ></Set>
-              <Set
-                v-bind:quantity="26"
-                title="Your set"
-                body="your body"
-                class="mb-8"
-              ></Set>
+              <Set v-bind:quantity="26"></Set>
             </v-col>
           </v-row>
         </section>
         <section class="pt-16">
           <h1>Your cards</h1>
           <v-row>
-            <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
+            <v-col
+              v-for="card in cards.slice(0, 12)"
+              :key="card.cardId"
+              class="d-flex child-flex"
+              sm="4"
+            >
               <CardImage
-                :imgUrl="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                :imgUrl="
+                  `https://picsum.photos/500/300?image=${card.cardId * 5 + 10}`
+                "
+                :card="card"
               >
               </CardImage>
             </v-col>
@@ -79,6 +82,7 @@
 import Set from "../components/Set";
 import CardImage from "../components/CardImg";
 import { createNamespacedHelpers } from "vuex";
+import { getUser } from "../api/AccountAPIServices";
 const { mapActions } = createNamespacedHelpers("Account");
 import router from "../router";
 export default {
@@ -86,6 +90,13 @@ export default {
   components: {
     Set,
     CardImage,
+  },
+  created() {
+    getUser().then((res) => {
+      this.cards = res.data.card;
+      this.sets = res.data.set;
+      // console.log(res);
+    });
   },
   data() {
     return {
@@ -98,6 +109,8 @@ export default {
           route: "/#",
         },
       ],
+      cards: [],
+      sets: [],
     };
   },
   methods: {

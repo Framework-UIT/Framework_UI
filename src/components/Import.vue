@@ -60,7 +60,6 @@ export default {
       return item.isDownloaded ? "error" : "primary";
     },
     addToDatabase(item) {
-      // console.log(item);
       createCard(item).then((res) => console.log(res));
       this.setItemDownloaded(item);
     },

@@ -53,7 +53,7 @@
 // import { mapState, mapActions } from "vuex";
 import { createNamespacedHelpers } from "vuex";
 const { mapActions, mapGetters } = createNamespacedHelpers("Account");
-const { mapState } = createNamespacedHelpers("Alert");
+const AlertHelpers = createNamespacedHelpers("Alert");
 export default {
   data() {
     return {
@@ -70,14 +70,16 @@ export default {
   },
   computed: {
     ...mapGetters(["getStatus"]),
-    ...mapState({ alert: (state) => state }),
+    ...AlertHelpers.mapState({ alert: (state) => state }),
   },
   mounted() {
     // if (!localStorage.getItem("user")) this.logout();
     // else this.$router.push("/home");
+    this.clearAlert();
   },
   methods: {
-    ...mapActions(["login", "logout", { clearAlert: "clear" }]),
+    ...mapActions(["login", "logout"]),
+    ...AlertHelpers.mapActions({ clearAlert: "clear" }),
     handleSubmit() {
       this.submitted = true;
       const { username, password } = this;

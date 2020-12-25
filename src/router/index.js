@@ -26,9 +26,19 @@ const routes = [
     component: () => import("../views/Home.vue"),
   },
   {
+    path: "/home/:id",
+    name: "CategoryView",
+    component: () => import("../views/CategoryView.vue"),
+  },
+  {
     path: "/topics",
     name: "Topics",
     component: () => import("../views/Topics.vue"),
+  },
+  {
+    path: "/topics/:id",
+    name: "SetDetails",
+    component: () => import("../views/TopicDetails.vue"),
   },
   {
     path: "/login",

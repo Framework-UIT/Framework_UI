@@ -1,10 +1,10 @@
 <template>
   <v-hover>
     <template v-slot:default="{ hover }">
-      <v-card class="mx-auto" max-width="344">
+      <v-card class="mx-auto" max-width="50px">
         <v-img
-          :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-          :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+          :src="`https://picsum.photos/500/300?image=${2 * 5 + 10}`"
+          :lazy-src="`https://picsum.photos/10/6?image=${10 * 5 + 10}`"
           aspect-ratio="1"
           class="grey lighten-2 white--text "
         >

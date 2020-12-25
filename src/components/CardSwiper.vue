@@ -1,12 +1,5 @@
 <template>
-  <vueper-slides
-    class="no-shadow"
-    :visible-slides="3"
-    arrows
-    :slide-ratio="1 / 3"
-    :gap="3"
-    :dragging-distance="70"
-  >
+  <vueper-slides class="no-shadow" :visible-slides="1" arrows :bullets="false">
     <template v-slot:arrow-left>
       <v-icon large>mdi-less-than </v-icon>
     </template>
@@ -14,14 +7,11 @@
     <template v-slot:arrow-right>
       <v-icon large>mdi-greater-than</v-icon>
     </template>
-    <vueper-slide v-for="(slide, i) in slides.slice(0, 3)" :key="i">
+    <vueper-slide v-for="(slide, i) in slides.slice(0, 5)" :key="i">
       <template v-slot:content>
         <div>
-          <CardImg
-            :title="slide.name"
-            :user="slide.userId"
-            :imgUrl="`https://picsum.photos/500/300?image=${i * 5 + 10}`"
-          ></CardImg>
+          <Flashcard :card="slide"></Flashcard>
+          <!-- <CardImg :card="slide"></CardImg> -->
         </div>
       </template>
     </vueper-slide>
@@ -31,13 +21,15 @@
 <script>
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
-import CardImg from "../components/CardImg";
+// import CardImg from "../components/CardImg";
+import Flashcard from "../components/FlashCard";
 export default {
   name: "CardSwiper",
   components: {
     VueperSlides,
     VueperSlide,
-    CardImg,
+    // CardImg,
+    Flashcard,
   },
   props: ["slides"],
   data() {

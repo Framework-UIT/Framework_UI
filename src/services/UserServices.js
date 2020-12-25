@@ -18,6 +18,7 @@ function login(username, password) {
         console.log(res.data.token);
         if (res && res.data) {
           auth.token = res.data.token;
+          auth.id = res.data.id;
           delete auth.Password;
           localStorage.setItem("user", JSON.stringify(auth));
         } else if (res.data.message) {
